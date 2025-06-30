@@ -13,10 +13,12 @@
         "build": "tsc && mcp-build",
         "watch": "tsc --watch",
         "start": "node dist/index.js",
-        "dev": "tsc && mcp-build && node dist/index.js"
+        "dev": "tsc && mcp-build && node dist/index.js",
+        "test": "npx @modelcontextprotocol/inspector node dist/index.js"
     },
     "dependencies": {
         "axios": "^1.10.0",
+        "dotenv": "^17.0.0",
         "mcp-framework": "^0.2.2"
     },
     "devDependencies": {
