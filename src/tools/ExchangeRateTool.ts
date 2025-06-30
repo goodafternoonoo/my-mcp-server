@@ -19,7 +19,7 @@ class ExchangeRateApiTool extends MCPTool<ExchangeRateApiInput> {
     description =
         '무료 환율 API를 사용하여 기준 통화(base)에서 대상 통화(target)로의 환율을 조회합니다.';
 
-    private readonly API_URL = 'https://open.er-api.com/v6/latest/';
+    private readonly API_URL = process.env.EXCHANGE_RATE_API_URL || '';
 
     schema = {
         base: {

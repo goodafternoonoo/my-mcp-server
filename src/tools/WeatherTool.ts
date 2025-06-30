@@ -20,9 +20,8 @@ class WeatherApiTool extends MCPTool<WeatherApiInput> {
     name = 'weather_api';
     description = 'Open-Meteo API를 사용하여 도시의 실제 날씨 정보를 가져오기';
 
-    private readonly GEOCODING_URL =
-        'https://geocoding-api.open-meteo.com/v1/search';
-    private readonly WEATHER_URL = 'https://api.open-meteo.com/v1/forecast';
+    private readonly GEOCODING_URL = process.env.GEOCODING_API_URL || '';
+    private readonly WEATHER_URL = process.env.WEATHER_API_URL || '';
 
     schema = {
         city: {
