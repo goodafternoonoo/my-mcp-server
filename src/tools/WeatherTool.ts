@@ -1,6 +1,8 @@
 import { MCPTool } from 'mcp-framework';
 import { z } from 'zod';
 import axios, { AxiosError } from 'axios';
+import dotenv from 'dotenv';
+dotenv.config();
 
 interface WeatherApiInput {
     city: string;
