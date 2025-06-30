@@ -1,8 +1,6 @@
 import { MCPTool } from 'mcp-framework';
 import { z } from 'zod';
 import axios from 'axios';
-import dotenv from 'dotenv';
-dotenv.config();
 
 interface TransitApiInput {
     originLat: number; // 출발지 위도

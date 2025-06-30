@@ -1,8 +1,6 @@
 import { MCPTool } from 'mcp-framework';
 import { z } from 'zod';
 import axios from 'axios';
-import dotenv from 'dotenv';
-dotenv.config();
 
 interface ExchangeRateApiInput {
     base: string; // 기준 통화 (예: KRW, USD, JPY 등)
